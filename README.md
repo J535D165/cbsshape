@@ -55,7 +55,7 @@ g <- ggplot(wijk_en_buurt_2017) +
 Compute the distance between every municipality in The Netherlands and the
 city of Amsterdam. 
 
-```
+``` R
 library(cbsshape)
 library(sf)
 library(tidyverse)
