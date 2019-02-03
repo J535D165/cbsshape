@@ -5,7 +5,7 @@ This package provides a simple interface for the [CBS Wijk en Buurtkaart shapefi
 ## Installation
 
 Install the package directly from Github with `devtools`. The package requires `sf` for reading shapefiles.
-```
+``` R
 install_github("J535D165/cbsshape")
 ```
 
@@ -45,9 +45,8 @@ library(ggplot2)
 wijk_en_buurt_2017 <- st_read_cbs(2017)
 
 # plot map
-g <- ggplot(wijk_en_buurt_2017) + 
-  geom_sf(aes(fill=AANT_INW/OPP_TOT)) + 
-  ggsave("density.png")
+ggplot(wijk_en_buurt_2017) + 
+  geom_sf(aes(fill=AANT_INW/OPP_TOT)) 
 ```
 
 ### Distance to Amsterdam
