@@ -1,0 +1,13 @@
+Package: cbsshape
+Type: Package
+Title: CBS Wijk En Buurtkaart
+Version: 0.1.0
+Authors@R: person("Jonathan", "De Bruin", email = "jonathandebruinos@gmail.com",
+  role = c("aut", "cre"))
+Description: Simple interface for CBS Wijk en Buurtkaart.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports:
+  sf

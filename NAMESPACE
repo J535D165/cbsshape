@@ -1,0 +1,6 @@
+importFrom("sf", "st_read")
+importFrom("utils", "download.file", "unzip")
+
+export(download_cbs_shapefile)
+export(list_cbs_shapefiles)
+export(st_read_cbs)
