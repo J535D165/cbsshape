@@ -49,6 +49,8 @@ ggplot(wijk_en_buurt_2017) +
   geom_sf(aes(fill=AANT_INW/OPP_TOT)) 
 ```
 
+![Population density](figs/demo_population.png)
+
 ### Distance to Amsterdam
 
 Compute the distance between every municipality in The Netherlands and the
@@ -71,7 +73,7 @@ df_centroids <- wijk_en_buurt_2017 %>%
   st_drop_geometry() %>% 
   ungroup()
 
-# compute the centroid of Amsterdam
+# grab the centroid of Amsterdam
 centroid_amsterdam <- df_centroids %>% 
   filter(GM_NAAM == "Amsterdam") %>% 
   pull(centroid)
