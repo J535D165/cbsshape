@@ -40,13 +40,20 @@ st_read_cbs(2017, "data/")
 ``` R
 library(cbsshape)
 library(ggplot2)
+library(dplyr)
 
 # download 2017 data
 wijk_en_buurt_2017 <- st_read_cbs(2017)
 
 # plot map
-ggplot(wijk_en_buurt_2017) + 
-  geom_sf(aes(fill=AANT_INW/OPP_TOT)) 
+wijk_en_buurt_2017 %>% 
+  # remove water polygons
+  filter(WATER == "NEE") %>%
+  # compute the population density
+  mutate(density = AANT_INW/OPP_LAND*100) %>% 
+  # plot the map
+  ggplot() + 
+    geom_sf(aes(fill=density))
 ```
 
 ![Population density](figs/demo_population.png)
