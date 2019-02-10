@@ -70,15 +70,13 @@ library(tidyverse)
 
 # download 2017 data
 wijk_en_buurt_2017 <- st_read_cbs(2017) %>%     
-  filter(GM_CODE != "GM9999")
-
+  filter(GM_CODE != "GM9999") %>% 
+  filter(WATER == "NEE")
+  
 # compute the centroids
 df_centroids <- wijk_en_buurt_2017 %>% 
-  group_by(GM_CODE, GM_NAAM) %>% 
-  summarise(geometry = st_combine(geometry)) %>% 
   mutate(centroid = st_centroid(geometry)) %>%
-  st_drop_geometry() %>% 
-  ungroup()
+  st_drop_geometry()
 
 # grab the centroid of Amsterdam
 centroid_amsterdam <- df_centroids %>% 
