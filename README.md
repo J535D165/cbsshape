@@ -2,6 +2,8 @@
 
 This package provides a simple interface for the [CBS Wijk en Buurtkaart shapefiles](https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data). These shapefiles are available on the website of CBS.
 
+Looking for open data from CBS? Check out [cbsodataR](https://github.com/edwindj/cbsodataR).
+
 ## Installation
 
 Install the package directly from Github with `devtools`. The package requires `sf` for reading shapefiles.
