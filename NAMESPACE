@@ -2,7 +2,12 @@ importFrom("sf", "st_read", "st_transform")
 importFrom("utils", "download.file", "unzip")
 
 export(download_cbs_shapefile)
+export(cbs_shape_download)
+
 export(list_cbs_shapefiles)
+export(cbs_shape_list)
+
 export(cbs_shape_exists)
 
 export(st_read_cbs)
+export(cbs_shape_read)

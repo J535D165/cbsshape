@@ -12,11 +12,11 @@
 #' @param verbose Verbosity. Default TRUE.
 #' @return st object with the CBS Wijk en Buurtkaart
 #' @examples
-#' st_read_cbs(2017)
-#' st_read_cbs(2018, level="buurt")
-#' st_read_cbs(2018, wgs84=TRUE)
-#' st_read_cbs(2016, path="wijkenbuurt2016/")
-st_read_cbs <- function(year, level="gem", path=NULL, wgs84=FALSE, verbose=TRUE) {
+#' cbs_shape_read(2017)
+#' cbs_shape_read(2018, level="buurt")
+#' cbs_shape_read(2018, wgs84=TRUE)
+#' cbs_shape_read(2016, path="wijkenbuurt2016/")
+cbs_shape_read <- function(year, level="gem", path=NULL, wgs84=FALSE, verbose=TRUE) {
 
   if (is.null(path)){
     path = download_cbs_shapefile(year, verbose=verbose)
@@ -38,3 +38,5 @@ st_read_cbs <- function(year, level="gem", path=NULL, wgs84=FALSE, verbose=TRUE)
 
   return(shp)
 }
+
+st_read_cbs <- cbs_shape_read

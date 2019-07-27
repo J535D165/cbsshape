@@ -18,7 +18,9 @@ shapefiles <- c(
 #' @export
 #'
 #' @examples
-#' list_cbs_shapefiles()
-list_cbs_shapefiles <- function(){
+#' cbs_shape_list()
+cbs_shape_list <- function(){
   return(shapefiles)
 }
+
+list_cbs_shapefiles <- cbs_shape_list

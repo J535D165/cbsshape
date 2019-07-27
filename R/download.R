@@ -9,9 +9,9 @@
 #' @export
 #'
 #' @examples
-#' download_cbs_shapefile(2017)
-#' download_cbs_shapefile(2017, path="data/")
-download_cbs_shapefile <- function(year, path=NULL, verbose=TRUE) {
+#' cbs_shape_download(2017)
+#' cbs_shape_download(2017, path="data/")
+cbs_shape_download <- function(year, path=NULL, verbose=TRUE) {
 
   year = as.character(year)
 
@@ -26,3 +26,5 @@ download_cbs_shapefile <- function(year, path=NULL, verbose=TRUE) {
 
   return(path)
 }
+
+download_cbs_shapefile <- cbs_shape_download
