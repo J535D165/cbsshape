@@ -1,4 +1,4 @@
-importFrom("sf", "st_read")
+importFrom("sf", "st_read", "st_transform")
 importFrom("utils", "download.file", "unzip")
 
 export(download_cbs_shapefile)
