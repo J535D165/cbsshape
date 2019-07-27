@@ -3,4 +3,6 @@ importFrom("utils", "download.file", "unzip")
 
 export(download_cbs_shapefile)
 export(list_cbs_shapefiles)
+export(cbs_shape_exists)
+
 export(st_read_cbs)
