@@ -8,6 +8,7 @@ Looking for open data from CBS? Check out [cbsodataR](https://github.com/edwindj
 
 Install the package directly from Github with `devtools`. The package requires `sf` for reading shapefiles.
 ``` R
+require(devtools)
 install_github("J535D165/cbsshape")
 ```
 
