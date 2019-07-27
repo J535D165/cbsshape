@@ -1,6 +1,6 @@
 # CBS Wijk en Buurtkaart interface
 
-This package provides a simple interface for the [CBS Wijk en Buurtkaart shapefiles](https://www.cbs.nl/nl-nl/dossier/nederland-regionaal/geografische-data). These shapefiles are available on the website of CBS.
+This package provides a simple interface for the [CBS Wijk en Buurtkaart shapefiles](https://www.cbs.nl/nl-nl/reeksen/geografische-data). These shapefiles are available on the website of CBS.
 
 Looking for open data from CBS? Check out [cbsodataR](https://github.com/edwindj/cbsodataR).
 
