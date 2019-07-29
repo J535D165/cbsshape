@@ -1,7 +1,7 @@
 Package: cbsshape
 Type: Package
 Title: CBS Wijk En Buurtkaart
-Version: 0.2.0
+Version: 0.2.1
 Authors@R: person("Jonathan", "De Bruin", email = "jonathandebruinos@gmail.com",
   role = c("aut", "cre"))
 Description: Simple interface for CBS Wijk en Buurtkaart.
