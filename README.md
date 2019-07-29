@@ -86,11 +86,11 @@ cbs_shape_read(2017, "wijkenbuurt2017/")
 Combine the download and read function to download the data only if not available. 
 
 ``` R
-if (!cbs_shape_exists(2017, "wijkenbuurt2017/")){
-  cbs_shape_download(2017, "wijkenbuurt2017/")
+if (!cbs_shape_exists(2017, path="wijkenbuurt2017")){
+  cbs_shape_download(2017, path="wijkenbuurt2017")
 }
 
-cbs_shape_read(2017, level="gem", path="wijkenbuurt2017/")
+cbs_shape_read(2017, level="gem", path="wijkenbuurt2017")
 ```
 
 ## Examples

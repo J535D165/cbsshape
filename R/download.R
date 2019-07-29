@@ -10,7 +10,7 @@
 #'
 #' @examples
 #' cbs_shape_download(2017)
-#' cbs_shape_download(2017, path="data/")
+#' cbs_shape_download(2017, path="wijkenbuurt2017")
 cbs_shape_download <- function(year, path=NULL, verbose=TRUE) {
 
   year = as.character(year)

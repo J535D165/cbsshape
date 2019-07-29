@@ -7,7 +7,7 @@
 #'   downloaded and a temporary path is created.
 #' @return TRUE or FALSE
 #' @examples
-#' cbs_shape_exists(2016, path="wijkenbuurt2016/")
+#' cbs_shape_exists(2016, path="wijkenbuurt2016")
 cbs_shape_exists <- function(year, path) {
 
   # shapefile path

@@ -15,7 +15,7 @@
 #' cbs_shape_read(2017)
 #' cbs_shape_read(2018, level="buurt")
 #' cbs_shape_read(2018, wgs84=TRUE)
-#' cbs_shape_read(2016, path="wijkenbuurt2016/")
+#' cbs_shape_read(2016, path="wijkenbuurt2016")
 cbs_shape_read <- function(year, level="gem", path=NULL, wgs84=FALSE, verbose=TRUE) {
 
   if (is.null(path)){
