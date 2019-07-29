@@ -28,6 +28,9 @@ cbs_shape_read <- function(year, level="gem", path=NULL, wgs84=FALSE, verbose=TR
 
   # shapefile path
   shp_path <- Sys.glob(file.path(path, sprintf("*%s*%s*.shp", level, year)))
+  if (length(shp_path) == 0){
+    stop(paste("data not found on location:", path))
+  }
 
   # load shape
   shp <- st_read(shp_path[[1]])
