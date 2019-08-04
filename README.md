@@ -103,7 +103,7 @@ library(ggplot2)
 library(dplyr)
 
 # download 2017 data
-wijk_en_buurt_2017 <- st_read_cbs(2017)
+wijk_en_buurt_2017 <- cbs_shape_read(2017)
 
 # plot map
 wijk_en_buurt_2017 %>% 
@@ -129,7 +129,7 @@ library(sf)
 library(tidyverse)
 
 # download 2017 data
-wijk_en_buurt_2017 <- st_read_cbs(2017) %>%     
+wijk_en_buurt_2017 <- cbs_shape_read(2017) %>%     
   filter(GM_CODE != "GM9999") %>% 
   filter(WATER == "NEE")
   
