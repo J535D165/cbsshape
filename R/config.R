@@ -8,7 +8,9 @@ shapefiles <- c(
   "2015"="https://www.cbs.nl/-/media/_pdf/2017/36/buurt_2015.zip",
   "2016"="https://www.cbs.nl/-/media/cbs/dossiers/nederland%20regionaal/wijk-en-buurtstatistieken/shape%202016%20versie%2030.zip", 
   "2017"="https://www.cbs.nl/-/media/cbs/dossiers/nederland%20regionaal/wijk-en-buurtstatistieken/wijkbuurtkaart_2017_v3.zip",
-  "2018"="https://www.cbs.nl/-/media/cbs/dossiers/nederland%20regionaal/wijk-en-buurtstatistieken/wijkbuurtkaart_2018_v2.zip"
+  "2018"="https://www.cbs.nl/-/media/cbs/dossiers/nederland%20regionaal/wijk-en-buurtstatistieken/wijkbuurtkaart_2018_v2.zip",
+  "2019"="https://www.cbs.nl/-/media/cbs/dossiers/nederland-regionaal/wijk-en-buurtstatistieken/wijkbuurtkaart_2019_v1.zip"
+  
 )
 
 #' List available CBS wijk en buurtkaarten
